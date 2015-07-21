@@ -16,8 +16,15 @@ module.exports = [
      method: 'GET',
      path: '/hello/{name}',
      handler: function(request, reply){
-      //  var hello = fs.readFileSync(__dirname + '/../src/tags/hello.tag', 'utf8');
-       reply(riot.render('hello', {name: request.params.name}));
+       reply(riot.render('./../public/js/hello.js', {name: request.params.name}));
      }
-   }
+   },
+
+  //  {
+  //    method: 'GET',
+  //    path: '/issues',
+  //    handler: function(request, reply){
+  //      reply(riot.render('hello', {name: request.params.name}));
+  //    }
+  //  }
 ];

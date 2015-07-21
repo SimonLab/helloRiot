@@ -5,7 +5,8 @@
   "main": "app/server.js",
   "scripts": {
     "start": "node app/server.js",
-    "test": "node_modules/.bin/tape test/hello.js"
+    "test": "node_modules/.bin/tape test/hello.js",
+    "compile": "node_modules/.bin/riot ./src/tags ./public/js"
   },
   "author": "SimonLab",
   "license": "ISC",
